@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Glow Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">Glow Atelier</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="auth-layout reveal">
+        <div class="auth-media">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1100&q=80" alt="Salon nails" />
+        </div>
+        <div class="form-card">
+          <p class="eyebrow">Join Glow Atelier</p>
+          <h1 style="margin-top:0;">Create your account</h1>
+          <form id="registerForm">
+            <label for="regName">Full name</label>
+            <input id="regName" required />
+            <label for="regEmail">Email</label>
+            <input id="regEmail" type="email" required />
+            <label for="regPassword">Password</label>
+            <input id="regPassword" type="password" required />
+            <label for="regPhone">Phone</label>
+            <input id="regPhone" />
+            <button class="btn btn-primary" type="submit">Register</button>
+          </form>
+          <p style="margin-top: 1rem;">Already have an account? <a href="login.html" style="color: var(--gold);">Login here</a>.</p>
+          <div id="messageBox" class="message"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

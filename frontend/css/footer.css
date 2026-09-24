@@ -1,0 +1,15 @@
+.site-footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.9);
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.2fr 1fr 1.2fr; gap: 2rem;
+}
+.site-footer h3, .site-footer h4 { font-family: 'Playfair Display', serif; margin-top: 0; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin-bottom: 0.45rem; }
+.site-footer a { color: rgba(255,255,255,0.82); }
+.newsletter-form { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.newsletter-form input { flex: 1; min-width: 220px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.15); padding: 0.8rem 1rem; background: rgba(255,255,255,0.08); color: white; }

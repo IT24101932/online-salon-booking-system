@@ -1,0 +1,23 @@
+.mobile-menu-open .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 74px;
+  right: 1rem;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px) {
+  .intro-grid, .service-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .intro-grid, .service-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .hero { min-height: 78vh; }
+}

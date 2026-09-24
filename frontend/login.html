@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Glow Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">Glow Atelier</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container page-shell">
+      <section class="auth-layout reveal">
+        <div class="auth-media">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1100&q=80" alt="Salon styling" />
+        </div>
+        <div class="form-card">
+          <p class="eyebrow">Welcome back</p>
+          <h1 style="margin-top:0;">Login to your account</h1>
+          <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" required />
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" required />
+            <button class="btn btn-primary" type="submit">Login</button>
+          </form>
+          <p style="margin-top: 1rem;">No account yet? <a href="register.html" style="color: var(--gold);">Register here</a>.</p>
+          <div id="messageBox" class="message"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
